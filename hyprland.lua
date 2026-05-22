@@ -2,6 +2,10 @@ require("dms.outputs")
 require("dms.cursor")
 require("dms.windowrules")
 
+hl.bind("switch:on:Lid Switch", hl.dsp.dpms({ action = "disable", monitor = "eDP-1" }))
+hl.bind("switch:off:Lid Switch", hl.dsp.dpms({ action = "enable", monitor = "eDP-1" }))
+
+
 hl.config({
     input = {
         kb_layout = "br",
